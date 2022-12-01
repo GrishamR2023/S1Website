@@ -40,7 +40,17 @@ caption{
 }
 
 tr:nth-of-type(even){
-    background: #DBe8e9;
+    background: #92c1c5;
+}
+textarea{
+    background-color: #555555;
+}
+input{
+    background-color: #555555;
+    color: #0aaa7a;
+}
+::placeholder{
+    color: rgb(182, 182, 182);
 }
 
 
@@ -49,17 +59,16 @@ tr:nth-of-type(even){
 /*  embedded styling */
 body{
     margin: 0;
-    background-color: #3f2860;
-    color: #40407A; /* text color*/
+    background-color: #5cbd58;
+    color: #7f7fe4; /* text color*/
     font-family: Verdana,Arial,sans-serif;
 }
 header{
-    background-image: url("images/lilyheader.jpg");
     background-color: #40407A;
     color: #fff;
     background-size: 100% 100%;
     font-size: 120%;
-    min-height: 200px;
+    min-height: 100px;
     margin-top: 50px;
     text-align:"right";
 }
@@ -68,19 +77,20 @@ header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
 header a:hover{text-decoration: none;display: block;color: #fff;}
 
 h1{
-    line-height: 200%;
-    padding-top: 50px;
+    line-height: 25%;
     padding-left: 2em;
 }
 h2{
     font-size: 200%;
 }
-
+h3{
+    font-size: 150%;
+}
 nav{
     position: fixed;
     top: 0;
     left: 0;
-    text-align: right;
+    text-align: center;
     background-color: #fff;
     margin: 0;
     padding-right: 0;
@@ -146,7 +156,7 @@ footer{
     margin: auto;
     width: 80%;
     background-color: #f5f5f5;
-    padding:2em;
+    padding:1em;
 }
 
 
@@ -157,35 +167,17 @@ footer{
 
 /* Home page, header will be larger */
 .home{
-    height: 30vh;
     padding-left: 8em;
-    padding-top: 3em;
 }
 
 /* Other pages, header will be slightly smaller */
 .content{
-    height: 10vh;
     padding-left: 8em;
     padding-top: 1em;
 }
 
-#mathero{
-    background-image: url("images/yogamat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    height: 300px;
-    padding-bottom: 1em;
-}
 
-#loungehero{
-    background-image: url("images/yogalounge.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    height: 300px;
-    padding-bottom: 1em;
-}
+
 
 #mobile{
     display: none;
@@ -222,21 +214,19 @@ section{
     /*  embedded styling */
     body{
         margin: 0;
-        background-color: #3f2860;
-        color: #40407A; /* text color*/
+        background-color: #5cbd58;
+        color: #7f7fe4; /* text color*/
         font-family: Verdana,Arial,sans-serif;
     }
     header{
-        background-image: url("images/sunrise.jpg");
-        background-color: #40407A;
+        background-color: #5cbd58;
         color: #fff;
         background-size: 100% 100%;
         font-size: 120%;
-        min-height: 200px;
-        margin-top: 50px;
-        text-align:"right";
+        min-height: 100px;
+        text-align:"center";
     }
-    header a:link{text-decoration: none;display: block;color: #40407A;}
+    header a:link{text-decoration: none;display: block;color: #ffffff;}
     header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
     header a:hover{text-decoration: none;display: block;color: #fff;}
     
@@ -253,11 +243,11 @@ section{
     nav{
         position: fixed;
         top: 0;
-        left: 0;
-        text-align: right;
-        background-color: #fff;
+        right: 0;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
         margin: 0;
-        padding-right: 0;
+        padding-right: 10;
         font-weight: bold;
         padding: .5em;
         width: 100%;
@@ -266,6 +256,7 @@ section{
     nav a{
         text-decoration: none; /*removes the hyperlink underline*/
         display: block;
+        text-align: center;
     }
     
     nav ul{
@@ -274,57 +265,42 @@ section{
         justify-content: flex-end;
         list-style-type: none;
         margin: 0;
-        font-size: 1.2em;
+        font-size: 1.2em
     }
     
     nav li{
         width: 7em;
         padding: 0 1em 0 1em;
+        text-align: center;
     }
     
     
     
-    nav a:link{color:#3F2860}
-    nav a:visited{color: #497777;}
+    nav a:link{color:#0aaa7a}
+    nav a:visited{color: #3e6666;}
     nav a:hover{color: #a26100;border: 3px inset #3333}
     
     
     footer{
-        background-color: #80cbc4;
-        font-size: .60em;
+        background-color: #000000;
+        font-size: 1em;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-style: italic;
     }
     
-    
     /*  classes styling */
     
     .studio{
-        color: #40407A;
+        color: #b0b0be;
         font-style: italic;
     }
-    
-    
-    
-    
-    
-    
-    
-    
     /*  id styling */
     /* purpose of of this id is to wrap the text */
     #wrapper{
-        background-color: #f5f5f5;
+        background-color: #2b2b2b;
         padding:2em;
     }
-    
-    
-    
-    
-    
-    
-    
     /* Home page, header will be larger */
     .home{
         height: 20vh;
@@ -333,29 +309,7 @@ section{
     }
     
     /* Other pages, header will be slightly smaller */
-    .content{
-        height: 10vh;
-        padding-left: 10%;
-        padding-top: 2em;
-    }
-    
-    #mathero{
-        background-image: url("images/yogamat.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        height: 300px;
-        padding-bottom: 1em;
-    }
-    
-    #loungehero{
-        background-image: url("images/yogalounge.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        height: 300px;
-        padding-bottom: 1em;
-    }
+
     
     #mobile{
         display: none;
@@ -394,12 +348,11 @@ section{
     /*  embedded styling */
     body{
         margin: 0;
-        background-color: #3f2860;
-        color: #40407A; /* text color*/
+        background-color: #5cbd58;
+        color: #7f7fe4; /* text color*/
         font-family: Verdana,Arial,sans-serif;
     }
     header{
-        background-image: url("images/sunrise.jpg");
         background-color: #40407A;
         color: #fff;
         background-size: 100% 100%;
@@ -418,6 +371,9 @@ section{
         padding-left: 2em;
     } */
 
+    h3{
+        font-size: 150%;
+    }
     h2{
         font-size: 200%;
     }
